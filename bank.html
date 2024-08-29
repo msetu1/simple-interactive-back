@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <!-- tailwind link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <h2 class="text-5xl text-center mt-16">
+        Lets get some
+        <span class="text-6xl font-bold text-green-6oo">Money</span>
+      </h2>
+    </header>
+    <main class="max-w-6xl mx-auto">
+      <section class="mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-10">
+          <div class="card bg-green-600 w-96 shadow-xl">
+            <div class="card-body text-white">
+              <h2 class="text-3xl font-bold">Deposit</h2>
+              <h2 class="text-6xl font-bold" >$<span id="deposit-total">00</span></h2>
+            </div>
+          </div>
+          <div class="card bg-[#facc15] w-96 shadow-xl">
+            <div class="card-body text-white">
+              <h2 class="text-3xl font-bold">Withdraw</h2>
+              <h2 class="text-6xl font-bold">$<span id="withdraw-total">00</span></h2>
+            </div>
+          </div>
+          <div class="card bg-blue-600 w-96 shadow-xl">
+            <div class="card-body text-white">
+              <h2 class="text-3xl font-bold">Balance</h2>
+              <h2 class="text-6xl font-bold">$<span id="total-balance">1240</span></h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div
+            class="w-full py-8 rounded-xl bg-fuchsia-400 text-white w-96"
+          >
+            <div class="card-body">
+              <h2 class="text-3xl font-bold text-black">Please Deposit</h2>
+
+              <div class="ml-10">
+                <input
+                  class="mt-5 mb-3 px-3 py-2 w-[75%]"
+                  type="text"
+                  name=""
+                  id="deposit-field"
+                  placeholder="$ amount you want to deposit"
+                />
+                <div>
+                  <button id="btn-deposit"
+                    class="px-6 py-3 text-xl font-bold text-white bg-gray-600 rounded-xl"
+                  >
+                    Deposit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full py-8 rounded-xl bg-[#ec4899] text-white w-96"
+          >
+            <div class="card-body">
+              <h2 class="text-3xl font-bold text-black">Please Withdraw</h2>
+              <div class="ml-10">
+                <input
+                  class="mt-5 mb-3 px-3 py-2 w-[75%]"
+                  type="text"
+                  name=""
+                  id="withdraw-field"
+                  placeholder="$ amount you want to withdraw"
+                />
+                <div>
+                  <button
+                  id="btn-withdraw"
+                    class="px-6 py-3 text-xl font-bold text-white bg-gray-600 rounded-xl"
+                  >
+                    Withdraw
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="deposit.js"></script>
+  <script src="withraw.js"></script>
+  </body>
+</html>
